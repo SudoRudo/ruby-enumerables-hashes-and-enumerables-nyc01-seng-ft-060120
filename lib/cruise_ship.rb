@@ -12,7 +12,7 @@ def select_winner(passengers)
   winner = ""
   while i < letters.length do
     passengers.each do |suite, name|
-      if suite == ":suite_#{letters[i]}" && name.start_with?("#{letters[i]}")
+      if suite == :suite_"#{letters[i]}" && name.start_with?("#{letters[i]}")
         winner = name
       end
     i += 1
