@@ -15,7 +15,7 @@ def select_winner(passengers)
       if suite == ":suite_#{letters[i]}" && name.start_with?("#{letters[i]}")
         winner = name
       end
-    i += 1
     end
+    i += 1
   end
 end
